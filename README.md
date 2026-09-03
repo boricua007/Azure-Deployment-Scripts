@@ -1,17 +1,17 @@
 # Azure Deployment Scripts
 
 ## Overview
-This repository contains reusable PowerShell scripts for deploying and managing Azure resources.  
-It is designed to demonstrate practical DevOps automation and provide a portfolio of cloud infrastructure skills.
+A collection of reusable PowerShell scripts for deploying and configuring Microsoft Azure resources. The repository demonstrates practical experience with Azure infrastructure automation, networking, and DevOps.
 
 ## Deployment Scripts
 - Deploy Azure resources with annotated scripts:
-  - `sql/` for SQL Server + Database deployments
-  - `storage/` for Storage Account scripts
-  - `app-service/` for App Service deployments
-  - `networking/` for VNet and NSG configurations
-- Organized folder structure for multiple resource types
-- Easy to extend and adapt for different environments
+  - `app-service/` — Azure App Service deployments
+  - `networking/` — Virtual Network and NSG configuration
+  - `sql/` — Azure SQL Server and Database deployments
+  - `storage/` — Azure Storage Account deployments
+
+- The scripts are organized by Azure resource type and can be extended or adapted for different environments.
+
 
 ## Architecture Diagram
 
@@ -55,7 +55,7 @@ flowchart TB
 
 ## Author
 
-**Daisy Allen**
+**Daisy Viruet-Allen**
 
 Software Developer focused on **.NET, Azure cloud technologies, application modernization, and DevOps automation**.
 
