@@ -4,7 +4,7 @@
 This repository contains reusable PowerShell scripts for deploying and managing Azure resources.  
 It is designed to demonstrate practical DevOps automation and provide a portfolio of cloud infrastructure skills.
 
-## Features
+## Deployment Scripts
 - Deploy Azure resources with annotated scripts:
   - `sql/` for SQL Server + Database deployments
   - `storage/` for Storage Account scripts
