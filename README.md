@@ -16,13 +16,35 @@ It is designed to demonstrate practical DevOps automation and provide a portfoli
 ## Architecture Diagram
 
 ```mermaid
-graph TD
-    Client[HTTP Requests] --> A[App Service]
-    A --> B[SQL Database]
-    A --> C[Storage Account]
-    A --> D[VNet + NSG]
-    B --> D
-    C --> D
+flowchart TB
+
+    %% Nodes
+    Client(["🌐 HTTP Requests"])
+    App["☁️ Azure App Service"]
+    SQL[("🗄️ Azure SQL Database")]
+    Storage[("📦 Azure Storage Account")]
+    Network["🔐 Virtual Network + NSG"]
+
+    %% Connections
+    Client -->|HTTPS| App
+    App -->|Database Connection| SQL
+    App -->|Blob / File Access| Storage
+    App -->|VNet Integration| Network
+    SQL --> Network
+    Storage --> Network
+
+    %% Styling
+    classDef client fill:#24292f,stroke:#58a6ff,stroke-width:2px,color:#ffffff
+    classDef compute fill:#0078D4,stroke:#50e6ff,stroke-width:2px,color:#ffffff
+    classDef database fill:#512BD4,stroke:#a78bfa,stroke-width:2px,color:#ffffff
+    classDef storage fill:#107C10,stroke:#54d454,stroke-width:2px,color:#ffffff
+    classDef network fill:#D83B01,stroke:#ff9f70,stroke-width:2px,color:#ffffff
+
+    class Client client
+    class App compute
+    class SQL database
+    class Storage storage
+    class Network network
 ```
 
 ## Prerequisites
