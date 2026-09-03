@@ -17,12 +17,13 @@ It is designed to demonstrate practical DevOps automation and provide a portfoli
 
 ```mermaid
 graph TD
-    A[App Service] --> B[SQL Database]
+    Client[HTTP Requests] --> A[App Service]
+    A --> B[SQL Database]
     A --> C[Storage Account]
     A --> D[VNet + NSG]
     B --> D
     C --> D
-
+```
 
 ## Prerequisites
 - [Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) installed
@@ -36,4 +37,3 @@ Clone the repository:
 ```bash
 git clone https://github.com/boricua007/Azure-Deployment-Scripts.git
 cd Azure-Deployment-Scripts
-
