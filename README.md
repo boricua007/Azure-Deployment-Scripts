@@ -59,3 +59,11 @@ Clone the repository:
 ```bash
 git clone https://github.com/boricua007/Azure-Deployment-Scripts.git
 cd Azure-Deployment-Scripts
+
+## Author
+
+**Daisy Allen**
+
+Software Developer focused on **.NET, Azure cloud technologies, application modernization, and DevOps automation**.
+
+---
