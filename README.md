@@ -53,10 +53,10 @@ flowchart TB
 - Git installed and configured
 - Visual Studio Code (recommended)
 
-## Installation
-Clone the repository:
+## Author
 
-```bash
-git clone https://github.com/boricua007/Azure-Deployment-Scripts.git
-cd Azure-Deployment-Scripts
+**Daisy Allen**
 
+Software Developer focused on **.NET, Azure cloud technologies, application modernization, and DevOps automation**.
+
+---
